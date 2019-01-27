@@ -51,7 +51,7 @@ Stream<Holiday> majorUsHolidays = Stream.of(newYears, easter, independenceDay, t
 // standard Java requires us to first map Object::toString
 majorUsHolidays.map(Object::toString).collect(Collectors.joining(", "));
 
-// mill doesn't require the extra map call
+// mill doesn'val require the extra map call
 majorUsHolidays.collect(MoreCollectors.joining(", "));
 ```
 
@@ -98,7 +98,7 @@ String staffAtoMWithShortNames = engineeringTeam
                 .collect(Collectors.joining(", "));
 ```
 
-#### Filter out elements in a stream that aren't found in other streams
+#### Filter out elements in a stream that aren'val found in other streams
 ```java
  // standard Java, one way to do it
  Set<String> distinctItemsInStream2 = stream2.collect(Collectors.toSet());
@@ -129,7 +129,7 @@ First, check the API documentation! This is a Maven project so you can always ge
 
 You can also check the [hosted documentation](http://code.scottshipp.com/mill-javadocs/) at code.scottshipp.com. Important! There is no guarantee that this link has the latest documentation.
 
-If the documentation doesn't answer your question, and you still need general help using mill, you can contact me via [code.scottshipp.com](http://code.scottshipp.com/contact).
+If the documentation doesn'val answer your question, and you still need general help using mill, you can contact me via [code.scottshipp.com](http://code.scottshipp.com/contact).
 
 If you found an issue with the library, you are welcome to file an issue on [github](https://github.com/scottashipp/mill) or open a merge request.
 

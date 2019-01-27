@@ -2,3 +2,5 @@
 *.iml
 *.ipr
 target/
+.gradle
+local.properties
